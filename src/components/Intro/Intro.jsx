@@ -7,7 +7,8 @@ function Intro() {
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src="/src/assets/images/MyImg1.png" />
+          {/* <img src="/src/assets/images/MyImg1.png" /> */}
+          <img src="https://i.ibb.co/0XVPxXX/MyImg1.png" alt="MyImg1" />
         </div>
       </div>
       <div className="right">
