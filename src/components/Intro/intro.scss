@@ -1,6 +1,13 @@
+@import "../../global.scss";
+
 .intro {
   background-color: white;
   display: flex;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
 
   .left {
     flex: 0.5;
@@ -21,6 +28,13 @@
         max-height: 80%;
         // height: 80%;
         object-fit: contain; /* or "cover", "fill", etc. depending on your desired effect */
+
+        @include mobile {
+          max-width: 50%;
+          max-height: 50%;
+          // height: 50%;
+          object-fit: contain;
+        }
       }
     }
   }
@@ -37,15 +51,28 @@
       flex-direction: column;
       justify-content: center;
 
+      @include mobile {
+        padding-left: 0;
+        align-items: center;
+      }
+
       h1 {
         font-size: 60px;
         margin: 10px 0;
+
+        @include mobile {
+          font-size: 40px;
+        }
       }
       h2 {
         font-size: 35px;
       }
       h3 {
         font-size: 30px;
+
+        @include mobile {
+          font-size: 25px;
+        }
 
         span {
           font-size: inherit;
